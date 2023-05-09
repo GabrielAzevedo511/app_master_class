@@ -2,10 +2,22 @@ import 'package:app_master_class/widgets/change_theme_widget.dart';
 import 'package:flutter/material.dart';
 
 class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({super.key});
+  const AppBarWidget({super.key, required this.indexPage});
+  final int indexPage;
 
   @override
   Widget build(BuildContext context) {
+    String titleByIndex() {
+      switch (indexPage) {
+        case 1:
+          return 'Repositórios';
+        case 2:
+          return 'Sobre o Dev';
+        default:
+          return 'Atividades';
+      }
+    }
+
     Widget logoActivities() {
       return Row(
         children: [
@@ -17,7 +29,7 @@ class AppBarWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Atividades',
+                titleByIndex(),
                 textAlign: TextAlign.start,
                 style: Theme.of(context).textTheme.titleLarge,
               ),

@@ -16,8 +16,8 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   void changePage(BuildContext context) {
-    Future.delayed(const Duration(seconds: 2))
-        .then((value) => Navigator.pushReplacementNamed(context, HOME_PAGE));
+    Future.delayed(const Duration(seconds: 2)).then(
+        (value) => Navigator.pushReplacementNamed(context, Routes.homePage));
   }
 
   @override

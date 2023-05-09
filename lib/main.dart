@@ -1,5 +1,3 @@
-import 'package:app_master_class/pages/about_page.dart';
-import 'package:app_master_class/pages/repository_page.dart';
 import 'package:app_master_class/theme/theme_viewmodel.dart';
 import 'package:flutter/material.dart';
 
@@ -36,13 +34,11 @@ class MyAppState extends State<MyApp> {
       theme: lightTheme(),
       darkTheme: darkTheme(),
       themeMode: viewModel.theme,
-      initialRoute: SPLASH_PAGE,
+      initialRoute: Routes.splashPage,
       debugShowCheckedModeBanner: false,
       routes: {
-        SPLASH_PAGE: (context) => const SplashPage(),
-        HOME_PAGE: (context) => const HomePage(),
-        REPO_PAGE: (context) => const RepositoryPage(),
-        ABOUT_PAGE: (context) => const AboutPage(),
+        Routes.splashPage: (context) => const SplashPage(),
+        Routes.homePage: (context) => const HomePage(),
       },
     );
   }
