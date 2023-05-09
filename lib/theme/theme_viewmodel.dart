@@ -5,10 +5,17 @@ import 'package:flutter/services.dart';
 class ThemeViewModel extends ChangeNotifier {
   ThemeMode theme;
 
-  ThemeViewModel(this.theme);
+  ThemeViewModel(this.theme) {
+    _changeStatusBar();
+  }
 
   changeTheme() {
     theme = theme == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
+    _changeStatusBar();
+    notifyListeners();
+  }
+
+  _changeStatusBar() {
     if (theme == ThemeMode.light) {
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         systemNavigationBarColor: lightTheme().backgroundColor,
@@ -20,6 +27,5 @@ class ThemeViewModel extends ChangeNotifier {
         systemNavigationBarIconBrightness: Brightness.light,
       ));
     }
-    notifyListeners();
   }
 }
