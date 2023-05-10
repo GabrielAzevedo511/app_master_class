@@ -31,17 +31,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    Widget pageByIndex(int index) {
-      switch (index) {
-        case 1:
-          return const RepositorySubPage();
-        case 2:
-          return const AboutSubPage();
-        default:
-          return const ActivitiesSubPage();
-      }
-    }
-
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -49,13 +38,14 @@ class _HomePageState extends State<HomePage> {
           children: [
             AppBarWidget(indexPage: currentPage),
             Expanded(
-                child: PageView.builder(
+                child: PageView(
               physics: const NeverScrollableScrollPhysics(),
               controller: pageController,
-              itemCount: 3,
-              itemBuilder: (context, index) {
-                return pageByIndex(index);
-              },
+              children: [
+                ActivitiesSubPage(),
+                const RepositorySubPage(),
+                const AboutSubPage()
+              ],
             )),
             BottomNavigationBarWidget(
               indexPage: currentPage,
