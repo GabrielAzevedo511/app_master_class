@@ -1,3 +1,4 @@
+import 'package:app_master_class/utils/assets_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -65,7 +66,7 @@ class BottomNavigationBarWidget extends StatelessWidget {
                   buttonName: 'Atividades',
                   isSelected: isHomePage,
                   content: SvgPicture.asset(
-                    'assets/icons/target.svg',
+                    AssetsUtils.icons.targetIcon,
                     width: 24,
                     height: 24,
                     color: theme.colorScheme.secondary,
@@ -82,7 +83,7 @@ class BottomNavigationBarWidget extends StatelessWidget {
                   buttonName: 'Repositórios',
                   isSelected: isRepoPage,
                   content: SvgPicture.asset(
-                    'assets/icons/github.svg',
+                    AssetsUtils.icons.githubIcon,
                     color: theme.colorScheme.secondary,
                     width: 24,
                     height: 24,

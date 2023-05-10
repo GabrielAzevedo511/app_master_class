@@ -1,4 +1,5 @@
 import 'package:app_master_class/main.dart';
+import 'package:app_master_class/utils/assets_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -11,7 +12,7 @@ class ChangeThemeWidget extends StatelessWidget {
     return GestureDetector(
       onTap: state.viewModel.changeTheme,
       child: SvgPicture.asset(
-        'assets/icons/moon.svg',
+        AssetsUtils.icons.moonIcon,
         color: Theme.of(context).colorScheme.secondary,
       ),
     );
