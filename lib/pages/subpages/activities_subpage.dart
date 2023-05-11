@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class ActivitiesSubPage extends StatelessWidget {
   ActivitiesSubPage({super.key});
-  List<GroupActivitiesModel> groupsActivities =
+  final List<GroupActivitiesModel> groupsActivities =
       (activites['portifolio-activities'] as List<Map<String, dynamic>>)
           .map((group) => GroupActivitiesModel.fromMap(group))
           .toList();

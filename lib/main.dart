@@ -1,7 +1,9 @@
+import 'package:app_master_class/model/group_activities_model.dart';
 import 'package:app_master_class/pages/web_page.dart';
 import 'package:app_master_class/theme/theme_viewmodel.dart';
 import 'package:flutter/material.dart';
 
+import 'pages/group_activities_page.dart';
 import 'pages/home_page.dart';
 import 'pages/splash_page.dart';
 import 'theme/theme.dart';
@@ -42,9 +44,12 @@ class MyAppState extends State<MyApp> {
         Routes.homePage: (context) => const HomePage(),
         Routes.webPage: (context) {
           final link = ModalRoute.of(context)!.settings.arguments as String;
-          return WebPage(
-            link: link,
-          );
+          return WebPage(link: link);
+        },
+        Routes.groupActivitiesPage: (context) {
+          final group = ModalRoute.of(context)!.settings.arguments
+              as GroupActivitiesModel;
+          return GroupActivitiesPage(groupActivitiesModel: group);
         }
       },
     );

@@ -8,7 +8,7 @@ const activites = {
       'link': 'https://pub.dev/packages/webview_flutter/example',
       'activities': [
         {
-          "name": 'FloatingActionButton Animação Implícita',
+          "name": 'FloatingActionButton Animação\nImplícita',
           "key": 'anim01',
           "dificult": [0, 255, 0],
           'link': 'CRIAR',
@@ -62,13 +62,13 @@ const activites = {
       'activities': [
         {
           "name": 'MoneyApp Mockup',
-          "key": 'mock01',
+          "key": 'play01',
           "dificult": [0, 255, 0],
           'link': 'CRIAR',
         },
         {
           "name": 'TinderApp Mockup',
-          "key": 'mock02',
+          "key": 'play02',
           "dificult": [0, 255, 0],
           'link': 'CRIAR',
         },

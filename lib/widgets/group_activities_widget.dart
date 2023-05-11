@@ -78,7 +78,10 @@ class GroupActivitiesWidget extends StatelessWidget {
 
     Widget seeMoreButton() {
       return GestureDetector(
-        onTap: () {},
+        onTap: () {
+          Navigator.of(context).pushNamed(Routes.groupActivitiesPage,
+              arguments: groupActivities);
+        },
         child: Container(
           width: 120,
           height: 35,
