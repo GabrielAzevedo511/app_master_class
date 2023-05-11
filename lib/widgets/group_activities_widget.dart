@@ -1,5 +1,6 @@
 import 'package:app_master_class/model/group_activities_model.dart';
 import 'package:app_master_class/utils/assets_utils.dart';
+import 'package:app_master_class/utils/rotes_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -53,7 +54,8 @@ class GroupActivitiesWidget extends StatelessWidget {
     Widget githubButton() {
       return GestureDetector(
         onTap: () {
-          // TODO colocar link
+          Navigator.pushNamed(context, Routes.webPage,
+              arguments: groupActivities.repoLink);
         },
         child: Row(
           children: [

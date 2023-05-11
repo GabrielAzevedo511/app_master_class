@@ -1,3 +1,4 @@
+import 'package:app_master_class/pages/web_page.dart';
 import 'package:app_master_class/theme/theme_viewmodel.dart';
 import 'package:flutter/material.dart';
 
@@ -39,6 +40,12 @@ class MyAppState extends State<MyApp> {
       routes: {
         Routes.splashPage: (context) => const SplashPage(),
         Routes.homePage: (context) => const HomePage(),
+        Routes.webPage: (context) {
+          final link = ModalRoute.of(context)!.settings.arguments as String;
+          return WebPage(
+            link: link,
+          );
+        }
       },
     );
   }

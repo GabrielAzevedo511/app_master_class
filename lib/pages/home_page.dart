@@ -36,7 +36,10 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            AppBarWidget(indexPage: currentPage),
+            AppBarWidget(
+              indexPage: currentPage,
+              isHomePage: true,
+            ),
             Expanded(
                 child: PageView(
               physics: const NeverScrollableScrollPhysics(),
