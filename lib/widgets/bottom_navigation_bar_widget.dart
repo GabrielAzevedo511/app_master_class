@@ -29,8 +29,10 @@ class BottomNavigationBarWidget extends StatelessWidget {
         child: SizedBox(
           width: 80,
           child: Column(children: [
-            SizedBox(
+            Container(
               height: 30,
+              width: 80,
+              decoration: const BoxDecoration(),
               child: Center(
                   child: SizedBox(height: 24, width: 24, child: content)),
             ),
