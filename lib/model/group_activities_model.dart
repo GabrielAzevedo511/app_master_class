@@ -18,7 +18,7 @@ class GroupActivitiesModel {
     return <String, dynamic>{
       'name': name,
       'description': description,
-      'image-link': imageLink,
+      'imageLink': imageLink,
       'link': repoLink,
       'activities': activities.map((x) => x.toMap()).toList(),
     };
@@ -32,7 +32,7 @@ class GroupActivitiesModel {
     return GroupActivitiesModel(
         name: map['name'] as String,
         description: map['description'] as String,
-        imageLink: map['image-link'] as String,
+        imageLink: map['imageLink'] as String,
         repoLink: map['link'] as String,
         activities: activities);
   }

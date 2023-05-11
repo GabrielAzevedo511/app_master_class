@@ -4,7 +4,7 @@ const activites = {
       'name': 'Animações',
       'description':
           'Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos.',
-      "image-link": 'assets/icons/running.svg',
+      "imageLink": 'assets/icons/running.svg',
       'link': 'https://pub.dev/packages/webview_flutter/example',
       'activities': [
         {
@@ -37,7 +37,7 @@ const activites = {
       'name': 'Leitura de Mockup',
       'description':
           'Aplicação da técnica de leitura de mockup, contendo 2 exercícios.',
-      "image-link": 'assets/icons/glasses.svg',
+      "imageLink": 'assets/icons/glasses.svg',
       'link': 'https://pub.dev/packages/webview_flutter/example',
       'activities': [
         {
@@ -57,7 +57,7 @@ const activites = {
     {
       'name': 'Playground',
       'description': 'Ambiente destinado a testes e estudos em geral.',
-      "image-link": 'assets/icons/toys.svg',
+      "imageLink": 'assets/icons/toys.svg',
       'link': 'https://pub.dev/packages/webview_flutter/example',
       'activities': [
         {
