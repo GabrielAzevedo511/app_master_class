@@ -1,4 +1,5 @@
 import 'package:app_master_class/model/group_activities_model.dart';
+import 'package:app_master_class/utils/rotes_utils.dart';
 import 'package:app_master_class/widgets/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -59,7 +60,10 @@ class GroupActivitiesPage extends StatelessWidget {
             itemCount: groupActivitiesModel.activities.length,
             itemBuilder: (context, index) {
               return GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(Routes.activityPage,
+                      arguments: groupActivitiesModel.activities[index]);
+                },
                 child: activityTileWidget(index),
               );
             },
