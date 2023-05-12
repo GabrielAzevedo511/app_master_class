@@ -17,4 +17,8 @@ class AssetsIcons {
   final String moonIcon = '$path/moon.svg';
   final String runningIcon = '$path/running.svg';
   final String targetIcon = '$path/target.svg';
+  final String facebookIcon = '$path/facebook.svg';
+  final String whatsappIcon = '$path/whatsapp.svg';
+  final String githubAltIcon = '$path/github-alt.svg';
+  final String instagramIcon = '$path/instagram.svg';
 }

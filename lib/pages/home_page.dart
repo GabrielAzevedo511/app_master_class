@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 ActivitiesSubPage(),
                 const RepositorySubPage(),
-                const AboutSubPage()
+                AboutSubPage()
               ],
             )),
             BottomNavigationBarWidget(
