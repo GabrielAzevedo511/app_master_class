@@ -5,31 +5,36 @@ const activites = {
       'description':
           'Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos.',
       "imageLink": 'assets/icons/running.svg',
-      'link': 'https://pub.dev/packages/webview_flutter/example',
+      'link':
+          'https://github.com/GabrielAzevedo511/MasterClassFlutterando_Animation',
       'activities': [
         {
           "name": 'FloatingActionButton Animação\nImplícita',
           "key": 'anim01',
           "dificult": [0, 255, 0],
-          'link': 'CRIAR',
+          'link':
+              'https://github.com/GabrielAzevedo511/MasterClassFlutterando_Animation/blob/master/lib/widgets/custom_floating_action_button.widget.dart',
         },
         {
           "name": 'ExpandedTile Animação Implícita',
           "key": 'anim02',
           "dificult": [0, 255, 0],
-          'link': 'CRIAR',
+          'link':
+              'https://github.com/GabrielAzevedo511/MasterClassFlutterando_Animation/blob/master/lib/widgets/custom_expanded_tile.widget.dart',
         },
         {
           "name": 'FloatingActionButton Animação Controlada',
           "key": 'anim03',
           "dificult": [125, 125, 0],
-          'link': 'CRIAR',
+          'link':
+              'https://github.com/GabrielAzevedo511/MasterClassFlutterando_Animation/blob/master/lib/widgets/controlled_custom_floating_action_button.widget.dart',
         },
         {
           "name": 'ExpandedTile Animação Controlada',
           "key": 'anim04',
           "dificult": [125, 125, 0],
-          'link': 'CRIAR',
+          'link':
+              'https://github.com/GabrielAzevedo511/MasterClassFlutterando_Animation/blob/master/lib/widgets/controlled_custom_expanded_tile.widget%20.dart',
         },
       ],
     },

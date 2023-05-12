@@ -91,7 +91,7 @@ class GroupActivitiesWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(15)),
           child: Text(
             'Ver mais',
-            style: theme.textTheme.titleSmall,
+            style: theme.textTheme.titleSmall!.copyWith(color: Colors.white),
           ),
         ),
       );

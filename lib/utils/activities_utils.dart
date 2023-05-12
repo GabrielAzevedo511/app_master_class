@@ -1,6 +1,7 @@
 import 'package:app_master_class/utils/activities/anim/expanded_tile/my_scroll_view.page.dart';
 import 'package:app_master_class/utils/activities/anim/floating_action_button/controlled_custom_floating_action_button.widget.dart';
 import 'package:app_master_class/utils/activities/anim/floating_action_button/custom_floating_action_button.widget.dart';
+import 'package:app_master_class/utils/activities/mock/money_app/money_app_page.dart';
 import 'package:flutter/material.dart';
 
 class ActivitiesUtils {
@@ -18,6 +19,8 @@ class ActivitiesUtils {
         return const MyScrollView(
           isControlled: true,
         );
+      case 'mock01':
+        return const MoneyAppPage();
       default:
         return Container(
           color: Colors.red,

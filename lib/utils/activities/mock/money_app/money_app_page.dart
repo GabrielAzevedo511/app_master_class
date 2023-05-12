@@ -1,8 +1,8 @@
 import 'package:app_master_class/utils/activities/mock/money_app/logo.widget.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class MoneyAppPage extends StatelessWidget {
+  const MoneyAppPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/icons/googleIcon.png',
+                    'assets/images/googleIcon.png',
                   ),
                   const SizedBox(
                     width: 8,

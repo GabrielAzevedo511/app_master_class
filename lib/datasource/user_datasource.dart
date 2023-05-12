@@ -12,7 +12,7 @@ const user = {
     {
       'name': 'GitHub',
       'iconLink': 'assets/icons/github-alt.svg',
-      'link': '',
+      'link': 'https://github.com/GabrielAzevedo511',
     },
     {
       'name': 'Facebook',

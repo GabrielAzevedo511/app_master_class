@@ -30,7 +30,8 @@ class GroupActivitiesPage extends StatelessWidget {
                     color: theme.primaryColor, shape: BoxShape.circle),
                 child: Text(
                   '${index + 1}',
-                  style: theme.textTheme.titleMedium,
+                  style: theme.textTheme.titleMedium!
+                      .copyWith(color: Colors.white),
                 ),
               ),
               Flexible(

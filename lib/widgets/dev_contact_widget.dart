@@ -42,6 +42,7 @@ class DevContactWidget extends StatelessWidget {
               },
               child: SvgPicture.asset(
                 contact.iconLink,
+                color: theme.colorScheme.secondary,
                 height: 24,
               ),
             ),
