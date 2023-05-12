@@ -41,23 +41,20 @@ class AppBarWidget extends StatelessWidget {
                     Icons.arrow_back_ios_new_rounded,
                     color: Theme.of(context).colorScheme.secondary,
                   )),
-          Hero(
-            tag: 'Title',
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  isHomePage ? titleByIndex() : title!,
-                  textAlign: TextAlign.start,
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
-                Text(
-                  'Flutterando Masterclass',
-                  textAlign: TextAlign.start,
-                  style: Theme.of(context).textTheme.titleSmall,
-                )
-              ],
-            ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                isHomePage ? titleByIndex() : title!,
+                textAlign: TextAlign.start,
+                style: Theme.of(context).textTheme.titleLarge,
+              ),
+              Text(
+                'Flutterando Masterclass',
+                textAlign: TextAlign.start,
+                style: Theme.of(context).textTheme.titleSmall,
+              )
+            ],
           )
         ],
       );
