@@ -1,8 +1,8 @@
 import 'package:app_master_class/model/dev_models/dev_contacts_model.dart';
 import 'package:app_master_class/model/dev_models/dev_model.dart';
-import 'package:app_master_class/utils/rotes_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DevContactWidget extends StatelessWidget {
   const DevContactWidget({Key? key, required this.devModel}) : super(key: key);
@@ -36,9 +36,8 @@ class DevContactWidget extends StatelessWidget {
           return Padding(
             padding: EdgeInsets.only(right: isLast ? 0 : 28),
             child: GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, Routes.webPage,
-                    arguments: contact.link);
+              onTap: () async {
+                await launchUrl(Uri.parse(contact.link));
               },
               child: SvgPicture.asset(
                 contact.iconLink,

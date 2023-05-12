@@ -15,14 +15,14 @@ const user = {
       'link': 'https://github.com/GabrielAzevedo511',
     },
     {
-      'name': 'Facebook',
-      'iconLink': 'assets/icons/facebook.svg',
-      'link': '',
+      'name': 'Linkedin',
+      'iconLink': 'assets/icons/linkedin.svg',
+      'link': 'https://www.linkedin.com/in/gabrielrobinsonazevedo/',
     },
     {
       'name': 'Instagram',
       'iconLink': 'assets/icons/instagram.svg',
-      'link': '',
+      'link': 'https://www.instagram.com/bielrobinson/',
     },
   ],
   'technologies': [
