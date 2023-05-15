@@ -1,5 +1,7 @@
 # Aplicativo Portifólio
 Este aplicativo tem por intuito, apresentar de maneira simples, todos os conteúdos aprendidos na MasterClass de Flutter, da Flutterando.
+
+Dentro dele é possível navegar pelas telas, observando os desafios lançados pelo curso, e sua implementação final, sendo possível também abrir o repositório do GitHub com a atividade, afim de verificar como a mesma foi feita.
 ## Telas
 - [Telas de exemplo para o desafio.](https://xd.adobe.com/view/6089d2f7-7ebb-4bd7-95ab-0e6c15322907-35da/grid)
 
